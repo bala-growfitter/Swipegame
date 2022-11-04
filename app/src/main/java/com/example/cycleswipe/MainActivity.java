@@ -99,6 +99,19 @@ public class MainActivity extends AppCompatActivity {
         berry.setX(-80);
         berry.setY(-80);
 
+//        cycle.setOnTouchListener(new OnSwipeTouchListener(ctx){
+//            @Override
+//            public void onSwipeRight() {
+//                cycleX=cycleX+movingX;
+//                cycle.setX(cycleX);
+//            }
+//            @Override
+//            public void onSwipeLeft() {
+//                cycleX=cycleX-movingX;
+//                cycle.setX(cycleX);
+//            }
+//        });
+
 
         cycle.setOnTouchListener(new View.OnTouchListener() {
             @Override
