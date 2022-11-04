@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:background="@drawable/runningtracktop2">
+
+<!--            <TextView-->
+<!--                android:id="@+id/startLabel"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="36dp"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Tap to start"-->
+<!--                android:textSize="30sp"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:layout_editor_absoluteX="1dp" />-->
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/speakeron"
+                android:src="@drawable/speakeron"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/speakeroff"
+                android:visibility="invisible"
+                android:src="@drawable/speakeroff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/scoreLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="25dp"
+                android:text="Score : 0"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_weight="0.80"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rt">
+            <ImageView
+                android:id="@+id/cycle"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/walkingman"
+                android:layout_gravity="start|bottom" />
+            <ImageView
+                android:id="@+id/burger"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/jf2" />
+
+            <ImageView
+                android:id="@+id/berry"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/f7" />
+
+            <ImageView
+                android:id="@+id/fries"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/jf4" />
+
+            <ImageView
+                android:id="@+id/orange"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/f2"
+                />
+
+            <ImageView
+                android:id="@+id/sausage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/jf5"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
